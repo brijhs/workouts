@@ -4,7 +4,7 @@ from runClass import *
 
 def main():
 	new = newRun()
-	f = open("allRuns.csv", "a")
+	f = open("run.csv", "a")
 	f.write( new.findName() + ' ,' + new.findType() + ' ,' + str(new.findDist()) + ' ,' + new.findPace() + ' ,' + new.findDate() + ' ,')
 	f.close()
 	
