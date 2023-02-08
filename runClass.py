@@ -1,4 +1,4 @@
-class Run:
+class run:
 	__slots__ = ["_name", "_runType", "_dist", "_pace", "_date"]
 	#Need these to be prompted  in newRun()
 	def __init__(self, name, runType, dist, pace, date):
@@ -31,17 +31,17 @@ def floatPace(num):
 	return float(int(num[0]) + float(int(num[-2:])/60))
 
 def newRun():
-	name = input("What is the name of your run?")
-	runType = input("What was the type of run?")
+	name = input("What is the name of your run? ")
+	runType = input("What was the type of run? ")
 	if 'back' in runType:
 		runType = "Out and Back"
 	elif 'oop' in runType:
 		runType = "Loop"
 	else:
 		runType  = 'Trail'
-	distance = input("How far was this run?")
-	pace = input("What was your pace?")
-	date = input("When was this run?")
-	result = Run(name, runType, distance, pace, date)
+	distance = input("How far was this run? ")
+	pace = input("What was your pace? ")
+	date = input("When was this run? ")
+	result = run(name, runType, distance, pace, date)
 	print(result)
 	return result
