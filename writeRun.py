@@ -5,10 +5,10 @@ from runClass import *
 def main1():
 	new = newRun()
 	f = open("run.csv", "a")
-	f.write( new.findName() + ' ,' + new.findType() + ' ,' + str(new.findDist()) + ' ,' + new.findPace() + ' ,' + new.findDate() + ' ,')
+	f.write( new.findName() + ' ,' + new.findType() + ' ,' + str(new.findDist()) + ' ,' + new.findPace() + ' ,' + new.findDate() + '\n')
 	f.close()
 	
 if  __name__ == "__main__":
-	main()	
+	main1()	
 
 
