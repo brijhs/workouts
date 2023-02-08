@@ -2,7 +2,7 @@
 
 from runClass import *
 
-def main():
+def main1():
 	new = newRun()
 	f = open("run.csv", "a")
 	f.write( new.findName() + ' ,' + new.findType() + ' ,' + str(new.findDist()) + ' ,' + new.findPace() + ' ,' + new.findDate() + ' ,')
