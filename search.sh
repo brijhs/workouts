@@ -5,4 +5,5 @@
 cat $1 | head -n1 > $2.csv && cat $1 | grep $2 >> $2.csv
 
 open $2.csv
-done
+sleep 120
+rm -f $2.csv
