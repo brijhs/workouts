@@ -28,7 +28,7 @@ class run:
 		return str("Name: {}, Type: {}, Distance: {}, Pace: {}, Date: {}".format(self._name, self._runType, self._dist, self._pace, self._date))
 
 def floatPace(num):
-	return float(int(num[0]) + float(int(num[-2:])/60))
+	return float(int(num[0]) + float(float(num[2:])/60))
 
 def newRun():
 	name = input("What is the name of your run? ")
