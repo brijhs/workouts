@@ -17,7 +17,12 @@ def search():
 	file = input("Run, erg, or lift? ")
 	term = input("Which {}? ".format(file))
 	file = file + '.csv'
-	os.system('sh search.sh {} {}'.format(file, term))
+	if 'un' in file: 
+		colval = 4
+	else:
+		colval = 2
+	os.system('sh search.sh {} {} {}'.format(file, term, colval))
+	#Input to sort data here perhaps with R 
 if __name__   == "__main__":
 	choice = input('Would you like to log a new workout or search existing ones? ')
 	if 'earch' in choice:

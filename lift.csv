@@ -1,3 +1,4 @@
-Name,Weight,Reps
-Bench ,155.0 ,3 
-Clean ,143.0 ,3Snatch ,110.0 ,3
+Name,Weight,Reps,Date
+Bench ,155.0 ,3 ,2/3/23
+Clean ,143.0 ,3 ,2/1/23
+Snatch ,110.0 ,3, 2/3/23
