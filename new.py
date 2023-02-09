@@ -5,7 +5,7 @@ import os
 import sys
 
 def newWorkout():
-	wtype = input("Congrats on the workout. What type of workout was it? ")
+	wtype = input("Congrats on the workout. What type (run, erg, or lift)  of workout was it? ")
 	if 'un' in wtype:
 		main1()	
 	elif 'rg' in wtype:
@@ -17,6 +17,7 @@ def search():
 	file = input("Run, erg, or lift? ")
 	term = input("Which {}? ".format(file))
 	file = file + '.csv'
+	term = "'" + term + "'"
 	if 'un' in file: 
 		colval = 4
 	else:
