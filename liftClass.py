@@ -20,7 +20,12 @@ class lift:
 
 def newLift():
 	name = input("What lift did you do? ")
-	weight = input("What was the weight in pounds? ")
+	unit = input("Was the lift in lbs or kgs? ")
+	if 'k' in unit or 'g' in unit: 
+		kgs = input("What was the weight in kgs? ")
+		weight = round(float(kgs) * 2.20462262, 1)
+	else:
+		weight = input("What was the weight in pounds? ")
 	reps = input("How many reps did you do? ")
 	date = input("When was this lift? ")
 	result = lift(name, weight, reps, date)
