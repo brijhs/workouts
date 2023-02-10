@@ -17,7 +17,7 @@ def search():
 	file = input("Run, erg, or lift? ")
 	term = input("Which {}? ".format(file))
 	file = file + '.csv'
-	if 'a' in term or 'l' in term:
+	if term == 'All' or term == 'all':
 		os.system('open {}'.format(file))
 	else:
 		term = "'" + term + "'"

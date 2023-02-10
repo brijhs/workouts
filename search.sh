@@ -11,6 +11,7 @@ then
 	cat $1 | head -n1 > "$2".csv && cat $1 | grep -i "$2" >> temp.csv
 	cat temp.csv | sort -t, -n -k$3  >> "$2".csv
 else
+	echo "Working"
 	cat $1 | head -n1 > "$2".csv && cat $1 | grep -i "$2" >> temp.csv
 	cat temp.csv | sort -t, -n -k$3 -r  >> "$2".csv
 
